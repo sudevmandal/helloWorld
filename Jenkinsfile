@@ -26,8 +26,8 @@ pipeline {
             steps {
                 withCredentials([string(credentialsId: 'OctopusAPIKey', variable: 'APIKey')]) {
                     sh """
-                    ls
-                        ${tool('Octo CLI')}/Octo push --package target/HelloWorldJSP.1.0.0.zip --replace-existing --server http://ec2-54-146-131-176.compute-1.amazonaws.com --apiKey ${APIKey}                        
+                    cd HelloWorldJSP
+                        ${tool('Octo CLI')}/Octo push --package HelloWorldJSP.1.0.0.zip --replace-existing --server http://ec2-54-146-131-176.compute-1.amazonaws.com --apiKey ${APIKey}                        
                     """
                 }
             }
