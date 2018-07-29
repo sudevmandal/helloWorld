@@ -25,7 +25,7 @@
                 <exclude name="**/*.java"/>
             </fileset>
         </copy>
-    	<war destfile="helloWorld.war"
+    	<war destfile="HelloWorldJSP.war"
     	    	        basedir="WebContent"
     	    	        needxmlfile="false">
     	    	</war>
