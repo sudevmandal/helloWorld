@@ -28,7 +28,7 @@ pipeline {
                     sh """
                     cd HelloWorldJSP
                     ls
-                        ${tool('Octo CLI')}/Octo push --package HelloWorldJSP.1.0.0.zip --replace-existing --server http://ec2-54-146-131-176.compute-1.amazonaws.com --apiKey ${APIKey}                        
+                        ${tool('Octo CLI')}/Octo push --package HelloWorldJSP/HelloWorldJSP.1.0.0.zip --replace-existing --server http://ec2-54-146-131-176.compute-1.amazonaws.com --apiKey ${APIKey}                        
                     """
                 }
             }
