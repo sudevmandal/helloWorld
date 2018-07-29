@@ -25,6 +25,10 @@
                 <exclude name="**/*.java"/>
             </fileset>
         </copy>
+    	<war destfile="helloWorld.war"
+    	    	        basedir="WebContent"
+    	    	        needxmlfile="false">
+    	    	</war>
     </target>
     <target name="clean">
         <delete dir="build/classes"/>
