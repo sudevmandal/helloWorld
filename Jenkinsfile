@@ -14,7 +14,7 @@ pipeline {
         stage ('Build') {
             steps {
                 sh '''
-                    cd helloWorld
+                    cd HelloWorldJSP
                     ant -v
                 '''
                 
